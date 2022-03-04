@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Media</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <h1>Media File</h1>
+
+    <figure id="videoContainer" data-fullscreen="false">
+        <video id="video" controls preload="metadata" poster="img/poster.jpg">
+            <source src="media/Coke Studio - Season 14 - Pasoori - Ali Sethi x Shae Gill.mp4" type="video/mp4">
+            <source src="" type="video/webm">
+            <source src="" type="video/ogg">
+
+        </video>
+        <div id="video-controls" class="controls" data-state="hidden">
+            <button id="playpause" type="button" data-state="play">Play/Pause</button>
+            <button id="stop" type="button" data-state="stop">Stop</button>
+            <div class="progress">
+                <progress id="progress" value="0" min="0">
+                    <span id="progress-bar"></span>
+                </progress>
+            </div>
+            <button id="mute" type="button" data-state="mute">Mute/Unmute</button>
+            <button id="volinc" type="button" data-state="volup">Vol+</button>
+            <button id="voldec" type="button" data-state="voldown">Vol-</button>
+            <button id="fs" type="button" data-state="go-fullscreen">Fullscreen</button>
+        </div>
+        <figcaption>
+            &copy; Rashadul Islam Rabby | <a href="https://github.com/rashadrabby" target="_blank">GitHub</a>
+        </figcaption>
+    </figure>
+
+
+    <style src="app.js"></style>
+</body>
+
+</html>
